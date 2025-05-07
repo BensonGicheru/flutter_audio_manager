@@ -84,7 +84,7 @@ class FlutterAudioManager {
     if (_onInputChanged == null) return;
     switch (call.method) {
       case "inputChanged":
-        return _onInputChanged();
+        return _onInputChanged!();
       default:
         break;
     }
