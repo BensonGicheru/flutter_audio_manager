@@ -36,11 +36,6 @@ public class FlutterAudioManagerPlugin implements FlutterPlugin, MethodCallHandl
     onAttachedToEngine(binding.getApplicationContext(), binding.getBinaryMessenger());
   }
 
-  public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
-    final FlutterAudioManagerPlugin instance = new FlutterAudioManagerPlugin();
-    instance.onAttachedToEngine(registrar.context(), registrar.messenger());
- }
-
   private void onAttachedToEngine(Context applicationContext, BinaryMessenger messenger) {
     listener = new AudioEventListener() {
       @Override
