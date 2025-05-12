@@ -129,7 +129,7 @@ public class SwiftFlutterAudioManagerPlugin: NSObject, FlutterPlugin {
     }
 
     func removeObserverAfterLogout() {
-        NotificationCenter.default.removeObserver(self, name: AVAudioSession.routeChangeNotification, object: nil)g
+        NotificationCenter.default.removeObserver(self, name: AVAudioSession.routeChangeNotification, object: nil)
     }
     
     public override deinit {
